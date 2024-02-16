@@ -40,6 +40,7 @@ class LogHarianController extends Controller
 
     public function verify(LogHarian $logHarian)
     {
+        $logHarian = decrypt($logHarian);
         return view('log-harian.verify', compact('logHarian'));
     }
 

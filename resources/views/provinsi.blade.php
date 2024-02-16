@@ -2,7 +2,7 @@
 
 @section('container')
 <h1>Daftar Provinsi</h1>
-{{-- <a href="{{ route('provinsi.create') }}" class="btn btn-primary">Tambah</a> --}}
+<a href="{{ route('provinsi.create') }}" class="btn btn-primary">Tambah</a>
     <ul id="provinsi-list"></ul>
     {{-- <td>
         <a href="{{ route('log-harian.edit', $logHarian->id) }}" class="btn btn-warning">Verifikasi</a>

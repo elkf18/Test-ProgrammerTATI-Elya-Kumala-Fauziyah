@@ -28,11 +28,21 @@ use App\Http\Controllers\ProvinsiController;
 
 // Route untuk HTML
 Route::view('/provinsi', 'provinsi');
+Route::view('/provinsi/create', 'provinsi.create');
+Route::view('/provinsi/store', 'provinsi.store');
+
+// Route::get('/provinsi', [ProvinsiController::class, 'index']);
+// Route::get('/provinsi/{id}', [ProvinsiController::class, 'show']);
+// Route::post('/provinsi', [ProvinsiController::class, 'store']);
+// Route::put('/provinsi/{id}', [ProvinsiController::class, 'update']);
+// Route::delete('/provinsi/{id}', [ProvinsiController::class, 'destroy']);
+
+
 
 // Route untuk API
 Route::get('/api/provinsi', [ProvinsiController::class, 'index'])->name('provinsi.index');
 Route::get('/api/provinsi/create', [ProvinsiController::class, 'create'])->name('provinsi.create');
-Route::get('/api/provinsi/store', [ProvinsiController::class, 'store'])->name('provinsi.store');
+Route::post('/api/provinsi/store', [ProvinsiController::class, 'store'])->name('provinsi.store');
 Route::get('/api/provinsi/{id}', [ProvinsiController::class, 'show']);
 Route::post('/api/provinsi', [ProvinsiController::class, 'store']);
 Route::put('/api/provinsi/{id}', [ProvinsiController::class, 'update']);

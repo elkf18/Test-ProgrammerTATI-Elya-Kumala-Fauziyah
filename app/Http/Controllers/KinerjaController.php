@@ -8,8 +8,8 @@ class KinerjaController extends Controller
 {
     public function showPredikatKinerja()
     {
-        $hasil_kerja = 'diatas ekspektasi';
-        $perilaku = 'diatas ekspektasi';
+        $hasil_kerja = 'dibawah ekspektasi';
+        $perilaku = 'dibawah ekspektasi';
 
         $predikat_kinerja = $this->predikat_kinerja($hasil_kerja, $perilaku);
 
